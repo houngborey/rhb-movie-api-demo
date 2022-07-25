@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package kh.dev.scott.movie.core.proto.data;
+
+option java_multiple_files = true;
+import "RhbOutputDataItemMessage.proto";
+message RhbOutputDataMessage {
+	int64 id = 1;
+	string title = 2;
+	string category = 3;
+	string star = 4;
+	repeated kh.dev.scott.movie.core.proto.data.item.RhbOutputDataItemMessage
+	items = 5;
+	string create_at = 6;
+	string update_at = 7;
+	string timestamp = 8;
+	string traceNo = 9;
+}

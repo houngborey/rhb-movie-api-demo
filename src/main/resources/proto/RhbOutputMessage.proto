@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package kh.dev.scott.movie.core.proto;
+
+option java_multiple_files = true;
+import "RhbOutputDataMessage.proto";
+message RhbOutputMessage {
+	string status = 1;
+	string code = 2;
+	string message = 3;
+	kh.dev.scott.movie.core.proto.data.RhbOutputDataMessage data = 4;
+}
